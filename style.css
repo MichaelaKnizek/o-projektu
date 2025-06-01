@@ -72,10 +72,18 @@ span {
 .pitch {
   padding: 2.5rem 1.5rem;
   font-size: 2.5rem;
+  color: var(--text-secondary);
 
   /* font-family: ; */
   text-align: center;
-  background-color: var(--background-secondary);
+
+  background-image: url("/images/landscape-7534634_1920.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
+
+  /* background-color: var(--background-secondary); */
 }
 
 /* ÚVODNÍ TEXT  */
@@ -92,16 +100,6 @@ span {
   max-width: 800px;
 }
 
-/* UVODNI FOTOGRAFIE */
-
-.intro-image {
-  background-image: url("/images/arnica-intro.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 70vh;
-}
-
 /* RECENZE */
 
 .review {
@@ -111,7 +109,7 @@ span {
   justify-content: center;
   align-items: center;
 
-  background-color: var(--background-primary);
+  background-color: var(--background-secondary);
 }
 
 .review__title {
@@ -129,7 +127,7 @@ span {
   padding: 2rem;
   font-size: 1.3rem;
   font-style: oblique;
-  border: 2px solid var(--background-secondary);
+  border: 2px solid var(--background-primary);
 }
 
 /* PATIČKA - KONTAKT */
@@ -185,7 +183,7 @@ span {
   }
 
   .review__photo {
-    background-image: url("/images/reviewer.jpg");
+    background-image: url("/images/peyne-francois-19LlB9pzyfM-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 300px;
