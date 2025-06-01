@@ -87,8 +87,15 @@ nav {
 
 .subheading__content {
   max-width: 800px;
-  padding: 40px 40px 40px 40px;
+  padding: 50px;
   text-align: center;
+}
+
+.subheading__photo {
+  width: 200px;
+  /* border-radius: 50%; */
+  float: none;
+
 }
 
 /* NÁHLED */
@@ -175,6 +182,12 @@ nav {
   .subheading__content {
     text-align: left;
     border-left: 2px solid var(--background-tertiary);
+  }
+
+  .subheading__photo {
+    /* width: 200px; */
+    /* border-radius: 50%; */
+    float: left;
   }
 
   /* NÁHLED */
