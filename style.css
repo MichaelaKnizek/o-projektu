@@ -1,37 +1,201 @@
-/* Používáme intuitivní výpočet rozměrů prvků. */
+/* CSS VARIABLES */
+
+:root {
+  --background-primary: #B2BFD6ff;
+  --background-secondary: #96BCDDff;
+  --background-tertiary: #11232Eff;
+  --text-primary: #1f2403;
+  --text-secondary: #e1e1e1;
+}
+
+/* :root[data-theme='dark'] {
+  --background-primary: #132221;
+  --background-secondary: #476462;
+  --text: #e1e1e1;
+} */
+
+/* ZÁKLADNÍ STYLY */
+
 *,
-*:before,
-*:after {
+body,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
+body {
+  color: var(--text-primary);
+  font-family: "Alegreya Sans", sans-serif;
+}
+
 html {
-  font-family: sans-serif;
+  scroll-behavior: smooth;
 }
 
-.container {
-  max-width: 20rem;
-  margin-right: auto;
-  margin-left: auto;
+nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
-/* CSS HEX
---powder-blue: #99bad9ff;
---paynes-gray: #4e616aff;
---gunmetal: #11232eff;
---night: #0e1516ff;
---gunmetal-2: #1b3039ff;
+span {
+  line-height: 1.5;
+}
 
-/* CSS HEX */
-/* --powder-blue: #96BCDDff;
---eerie-black: #1A221Dff;
---gunmetal: #11232Eff;
---powder-blue-2: #B2BFD6ff;
---gunmetal-2: #1B3039ff; */
+/* HLAVIČKA - NAVIGACE */
 
-/* CSS HEX */
-/* --powder-blue: #B2BFD6ff;
---black: #020303ff;
---charcoal: #375768ff;
---night: #0E1516ff;
---gunmetal: #1B3039ff; */
+.page-header {
+  padding: 1.5rem;
+  padding-bottom: 0;
+
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--background-tertiary);
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: var(--text-secondary);
+  /* font-family: ; */
+}
+
+.navlink {
+  text-decoration: none;
+  margin-right: 0.5rem;
+  color: var(--text-secondary);
+}
+
+/* HLAVNÍ NADPIS */
+
+.pitch {
+  padding: 2.5rem 1.5rem;
+  font-size: 2.5rem;
+
+  /* font-family: ; */
+  text-align: center;
+  background-color: var(--background-secondary);
+}
+
+/* ÚVODNÍ TEXT  */
+
+.subheading {
+  padding: 2.5rem 1.5rem;
+  font-size: 1.5rem;
+  background-color: var(--background-primary);
+}
+
+.subheading__content {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 800px;
+}
+
+/* UVODNI FOTOGRAFIE */
+
+.intro-image {
+  background-image: url("/images/arnica-intro.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+}
+
+/* RECENZE */
+
+.review {
+  padding: 3.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--background-primary);
+}
+
+.review__title {
+  font-size: 1.7rem;
+  margin-bottom: 2rem;
+}
+
+.review__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.review__text {
+  padding: 2rem;
+  font-size: 1.3rem;
+  font-style: oblique;
+  border: 2px solid var(--background-secondary);
+}
+
+/* PATIČKA - KONTAKT */
+
+.footer {
+  padding: 2.5rem 1.5rem;
+  font-size: 1.2rem;
+  text-align: center;
+  color: var(--text-secondary);
+  background-color: var(--background-tertiary);
+}
+
+
+@media (min-width: 840px) {
+
+  /* HLAVIČKA - NAVIGACE */
+
+  .page-header {
+    padding: 2rem 4rem;
+    padding-bottom: 0;
+  }
+
+  .logo {
+    font-size: 2.25rem;
+  }
+
+  .navlink {
+    font-size: 1.5rem;
+  }
+
+  /* HLAVNÍ NADPIS */
+
+  .pitch {
+    font-size: 3rem;
+  }
+
+  /* ÚVODNÍ TEXT */
+
+  .subheading {
+    padding: 2.5rem 4rem;
+    font-size: 1.75rem;
+  }
+
+  /* RECENZE */
+
+  .review__text {
+    width: 300px;
+    padding: 1.5rem;
+
+    background-color: var(--background-secondary);
+    position: relative;
+    left: 60px;
+  }
+
+  .review__photo {
+    background-image: url("/images/reviewer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  nav {
+    gap: 2rem;
+  }
+}
