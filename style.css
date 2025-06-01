@@ -68,7 +68,7 @@ nav {
   text-align: center;
   /* font-family: ; */
 
-  background-image: url("/images/landscape-7534634_1920.jpg");
+  background-image: url("images/landscape-7534634_1920.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -224,7 +224,7 @@ nav {
   }
 
   .preview__photo {
-    background-image: url("/images/peyne-francois-19LlB9pzyfM-unsplash.jpg");
+    background-image: url("images/peyne-francois-19LlB9pzyfM-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 300px;
