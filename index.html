@@ -1,15 +1,83 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <script type="module" src="script.js"></script>
-    <title>Webová aplikace</title>
+    <title>DKK</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Lora:ital@1&family=Dawning+of+a+New+Day&display=swap"
+      rel="stylesheet"
+    />
   </head>
-<body>
-  <div class="container">
-    <h1>Webová aplikace</h1>
-  </div>
-</body>
+  <body>
+    <!-- HLAVIČKA - NAVIGACE  -->
+
+    <header class="page-header">
+      <div class="logo">DKK</div>
+      <nav>
+        <a class="navlink" href="#pricelist">O projektu</a>
+        <a class="navlink" href="#contact">O autorkách</a>
+        <!-- <div class="theme-switch-wrapper">
+          <span>Dark mode</span>
+          <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+          </label>
+        </div> -->
+      </nav>
+    </header>
+
+    <main>
+      <!-- HLAVNÍ NADPIS -->
+
+      <section class="pitch">
+        <p>Do kopce v klidu</p>
+      </section>
+
+      <!-- ÚVODNÍ TEXT -->
+
+      <section class="subheading">
+        <p class="subheading__content">
+          Cílem našeho projektu je vytvořit aplikaci, která pomůže lidem s
+          pohybem v horách a s plánováním tras podle jejich přání a zároveň
+          přiměřených jejich fyzické kondici a orientaci v terénu. Podle
+          preferencí uživatele nabídne adekvátní trasu na výlet a poskytne
+          uživateli další informace, které s průběhem výletu souvisí - mapu
+          trasy a její popis (délka, náročnost, vhodnost a co to v praxi
+          znamená), možnosti občerstvení, místa s pitnou vodou, co dělat v
+          krizové situaci, odkazy na další užitečné aplikace.
+        </p>
+      </section>
+
+      <!-- OBRÁZEK CHATY
+
+      <section>
+        <div class="intro-image"></div>
+      </section> -->
+
+      <!-- OCHUTNÁVKA -->
+
+      <section class="review">
+        <div class="review__content">
+          <div class="review__text">
+            Romantika pro dva <br />
+            Vezmu i psa (nebo tchyni) <br />
+            Z trasy rovnou na pivo <br />
+            Pro introverty <br />
+          </div>
+          <div class="review__photo"></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- PATIČKA -->
+
+    <footer class="footer">
+      <p>© 2025, Katerina & Michaela</p>
+    </footer>
+  </body>
 </html>

@@ -1,5 +1,7 @@
 /* Používáme intuitivní výpočet rozměrů prvků. */
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
@@ -12,3 +14,24 @@ html {
   margin-right: auto;
   margin-left: auto;
 }
+
+/* CSS HEX
+--powder-blue: #99bad9ff;
+--paynes-gray: #4e616aff;
+--gunmetal: #11232eff;
+--night: #0e1516ff;
+--gunmetal-2: #1b3039ff;
+
+/* CSS HEX */
+/* --powder-blue: #96BCDDff;
+--eerie-black: #1A221Dff;
+--gunmetal: #11232Eff;
+--powder-blue-2: #B2BFD6ff;
+--gunmetal-2: #1B3039ff; */
+
+/* CSS HEX */
+/* --powder-blue: #B2BFD6ff;
+--black: #020303ff;
+--charcoal: #375768ff;
+--night: #0E1516ff;
+--gunmetal: #1B3039ff; */
