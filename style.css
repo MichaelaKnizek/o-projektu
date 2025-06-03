@@ -217,7 +217,8 @@ nav {
     width: 300px;
     padding: 1.5rem;
 
-    background-color: var(--background-secondary);
+    color: var(--text-secondary);
+    background-color: var(--background-tertiary);
     position: relative;
     left: 60px;
   }
